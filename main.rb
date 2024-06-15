@@ -8,7 +8,7 @@ require 'uri'
 # Program şuan için sadece "HTTP" türünde Proxy desteklemektedir.
 # Proxy listesi IP:PORT şeklinde olmalıdır.
 
-class DorkScanner
+class DorkDevSecOps
   def initialize
     @params = {
       proxy_list: nil,
@@ -98,8 +98,7 @@ Parametreler:
   -d, --dork-list DORK_LIST: Dork listesi tanımlamak için kullanılır.
   -t, --timeout TIMEOUT: İsteklere zaman aşımı vermek için kullanılır.
 
-Kullanım:
-    HELP_TEXT
+  HELP_TEXT
 
     STDOUT.puts(help_text.blue)
   end
@@ -218,5 +217,5 @@ class String
   end
 end
 
-dorkscan = DorkScanner.new
+dorkscan = DorkDevSecOps.new
 dorkscan.main
